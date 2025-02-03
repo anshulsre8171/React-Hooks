@@ -16,7 +16,7 @@ console.log(text,"context data");
 
     <h1>hello</h1>
     <h1>{text}</h1>
-    <button onClick={()=>{setText("hello text")}} ></button>
+    <button onClick={()=>{setText("hello text")}} >CLICK ME</button>
     </>
   )
 }
