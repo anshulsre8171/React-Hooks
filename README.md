@@ -1,8 +1,6 @@
-# React + Vite
+in this file example of useContext hook in react.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+useContext hook is a way to share data between components without having to pass the data manually through each level of components (known as prop drilling).
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Avoid prop drilling :- hen you have deeply nested components passing props through each level can be hard to manage .context hook helps you avoid this.
+centralized state :- you can manage and access global staate (like user setting or theme )accross your app easily.

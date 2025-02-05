@@ -1,22 +1,26 @@
-
 import './App.css'
-import { useContext } from 'react'
-import { TextContext } from './context/textContext'
+import { Add } from './context/Add';
+import { Home } from './context/Home';
 
-function App() {
+//import { ThemeContext } from './context/theme'
 
-const t=useContext(TextContext)
-console.log(t,"context data");
+function App() {  
 
-const {text,setText}=useContext(TextContext)
-console.log(text,"context data");
+  // const p=useContext(ThemeContext)
+  // console.log(p,"theme is coming soon");
+
+  // const {theme,setTheme}=useContext(ThemeContext)
+  // console.log(theme,"theme is coming soon");
 
   return (
     <>
+    {/*   
+     <h1>{theme}</h1>
+    <button onClick={()=>{setTheme("black")}}>theme</button>
+     */}
+    <Add/>
+    <Home/>
 
-    <h1>hello</h1>
-    <h1>{text}</h1>
-    <button onClick={()=>{setText("hello text")}} >CLICK ME</button>
     </>
   )
 }
